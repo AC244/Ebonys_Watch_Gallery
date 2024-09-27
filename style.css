@@ -14,10 +14,6 @@ body {
     color: rgb(115, 112, 112);
     font-size: 3em;
     padding-top: 7%;
-    /* background-color: aliceblue;
-    display: inline-block; 
-    margin: 0 ;
-    padding: 20px;  */
 }
 
 
@@ -34,8 +30,8 @@ body {
     align-items: center;
 }
 .container img {
-    width: 60%; 
-    height: 80%; 
+    width: 75%; 
+    height: 67%; 
     object-fit: cover; 
     border-style: groove;
     border-radius: 10px;
@@ -49,13 +45,60 @@ body {
 }
 
 
-@media screen and (max-height: 650px) {
+/* 
+body {
+    background-color: rgba(222, 184, 135, 0.665);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;/
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    color: rgb(115, 112, 112);
+    font-size: 3em;
+    padding-top: 5%; 
+
+.container {
+    margin: 50px 100px; 
+    width: 70%;
+    max-height: 800px; 
+    display: flex;
+    justify-content: space-between; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+}
+
+#shows {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 30%;
+    height: auto; 
+    object-fit: cover; 
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    border-radius: 10px;
+    transition: transform ease-in-out 0.5s;
+}
+
+.container img:hover { 
+    transform: scale(1.05); 
+} */
+
+/* @media screen and (max-height: 650px) {
     #navbar {
         display: flex;
         justify-content: space-between;
     }
     h1 {
-        font-size:0.7em;
+        font-size:1em;
     }
    
 }
@@ -69,4 +112,46 @@ body {
         font-size:1.5em;
     }
   
+} */
+
+@media screen and (max-height: 650px) {
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        margin: 20px; 
+        width: 90%; 
+        flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+    }
+
+    .container img {
+        width: 100%; 
+        height: auto;
+        max-height: 300px;
+        object-fit: cover; 
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.684);
+        transition: all ease-in-out 0.5s;
+    }
+
+    .container img:hover { 
+        transform: scale(1.05); 
+    }
 }
